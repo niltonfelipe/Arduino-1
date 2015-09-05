@@ -48,7 +48,7 @@ O melhor lugar para fazer perguntas relacionadas a este núcleo é fórum da com
 
 Se você encontrar um problema, você está convidado a apresentá-lo aqui no Github: https://github.com/esp8266/Arduino/issues. Forneça o máximo possível de contexto: a versão que você está usando (você pode verificá-lo no Fórum Manager), seu código esboço, saída serial, modelo da placa, configurações IDE (seleção bordo, tamanho flash, etc).
 
-### Contributing
+### Contribuindo
 
 Para pequenas correções de código e documentação, vá em frente e envie uma solicitação de recebimento.
 
@@ -56,7 +56,7 @@ Mudanças maiores (reescrever partes do código existente a partir do zero, adic
 
 Ramos especiais com lotes de pequenos commits (especialmente intitulado "oops", "fix erro de digitação", "esqueceu-se de adicionar o arquivo", etc.) deve ser esmagado antes de abrir uma solicitação de recebimento. Ao mesmo tempo, por favor, abster-se de colocar várias alterações independentes em uma única solicitação de recebimento.
 
-### License and credits ###
+### Licença e créditos ###
 
 Arduino IDE é desenvolvido e mantido pela equipe de Arduino. O IDE é licenciado sob a GPL.
 
