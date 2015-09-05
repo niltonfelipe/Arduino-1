@@ -1,33 +1,33 @@
-Arduino core for ESP8266 WiFi chip
+Núcleo Arduino para chips WiFi ESP8266
 ===========================================
 
-This project brings support for ESP8266 chip to the Arduino environment. It lets you write sketches using familiar Arduino functions and libraries, and run them directly on ESP8266, no external microcontroller required.
+Este projeto traz suporte para chips ESP8266 para o ambiente Arduino. Ele permite que você escrever esboços usando funções e bibliotecas familiares Arduino, e executá-los diretamente sobre ESP8266, não microcontrolador externo necessário.
 
-ESP8266 Arduino core comes with libraries to communicate over WiFi using TCP and UDP, set up HTTP, mDNS, SSDP, and DNS servers, do OTA updates, use a file system in flash memory, work with SD cards, servos, SPI and I2C peripherals.
+ESP8266 Arduino núcleo vem com bibliotecas de se comunicar através de Wi-Fi usando TCP e UDP, configurar HTTP, mDNS, SSDP, e servidores de DNS, faça atualizações OTA, use um sistema de arquivos em memória flash, o trabalho com cartões SD, servos, SPI e periféricos I2C .
 
-### Installing with Boards Manager ###
+### Instando com Boards Manager ###
 
-Starting with 1.6.4, Arduino allows installation of third-party platform packages using Boards Manager. We have packages available for Windows, Mac OS, and Linux (32 and 64 bit).
+Começando com 1.6.4, Arduino permite a instalação de pacotes da plataforma de terceiros usando o Gerenciador Boards. Temos pacotes disponível para Windows, Mac OS e Linux (32 e 64 bits).
 
-- Install Arduino 1.6.5 from the [Arduino website](http://www.arduino.cc/en/main/software).
-- Start Arduino and open Preferences window.
-- Enter ```http://arduino.esp8266.com/stable/package_esp8266com_index.json``` into *Additional Board Manager URLs* field. You can add multiple URLs, separating them with commas.
-- Open Boards Manager from Tools > Board menu and install *esp8266* platform (and don't forget to select your ESP8266 board from Tools > Board menu after installation).
+Instale Arduino 1.6.5 do website Arduino.
+Arduino e abra Preferências janela Iniciar.
+Digite http://arduino.esp8266.com/stable/package_esp8266com_index.json em *Additional Board Manager URLs* field. Você pode adicionar vários URLs, separando-os com vírgulas.
+- Abrir Boards Manager do menu Ferramentas> > Board menu e instalar esp8266 plataforma (e não se esqueça de selecionar sua placa ESP8266 de menu Ferramentas> Board após a instalação).
 
-#### Available versions
+#### Versões disponíveis
 
-##### Stable version ![](http://arduino.esp8266.com/stable/badge.svg)
+##### Versão estável ![](http://arduino.esp8266.com/stable/badge.svg)
 Boards manager link: `http://arduino.esp8266.com/stable/package_esp8266com_index.json`
 
-Documentation: [Reference](http://arduino.esp8266.com/stable/doc/reference.html)
+Documentação:: [Reference](http://arduino.esp8266.com/stable/doc/reference.html)
 
 ##### Staging version ![](http://arduino.esp8266.com/staging/badge.svg)
 Boards manager link: `http://arduino.esp8266.com/staging/package_esp8266com_index.json`
 
-Documentation: [Reference](http://arduino.esp8266.com/staging/doc/reference.html)
+Documentação: [Reference](http://arduino.esp8266.com/staging/doc/reference.html)
 
 
-### Building latest version from source [![Linux build status](https://travis-ci.org/esp8266/Arduino.svg)](https://travis-ci.org/esp8266/Arduino)
+### Construindo versão mais recente da fonte [![Linux build status](https://travis-ci.org/esp8266/Arduino.svg)](https://travis-ci.org/esp8266/Arduino)
 
 ```
 $ git clone https://github.com/esp8266/Arduino.git
@@ -35,39 +35,37 @@ $ cd Arduino/build
 $ ant dist
 ```
 
-Documentation for latest development version:
+Documentação para última versão de desenvolvimento:
 
 - [Reference](hardware/esp8266com/esp8266/doc/reference.md)
 - [Supported boards](hardware/esp8266com/esp8266/doc/boards.md)
 - [Change log](hardware/esp8266com/esp8266/doc/changes.md)
 
-### Issues and support ###
+### Questões e apoio ###
 
-The best place to ask questions related to this core is ESP8266 community forum: http://www.esp8266.com/arduino.
-If you find the forum useful, please consider supporting it with a donation.
+O melhor lugar para fazer perguntas relacionadas a este núcleo é fórum da comunidade ESP8266: http://www.esp8266.com/arduino. Se você encontrar o fórum útil, por favor considerar apoiar-lo com uma doação.
 [![Donate](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/webscr?cmd=_s-xclick&hosted_button_id=4M56YCWV6PX66)
 
-If you encounter an issue, you are welcome to submit it here on Github: https://github.com/esp8266/Arduino/issues.
-Please provide as much context as possible: version which you are using (you can check it in Boards Manager), your sketch code, serial output, board model, IDE settings (board selection, flash size, etc).
+Se você encontrar um problema, você está convidado a apresentá-lo aqui no Github: https://github.com/esp8266/Arduino/issues. Forneça o máximo possível de contexto: a versão que você está usando (você pode verificá-lo no Fórum Manager), seu código esboço, saída serial, modelo da placa, configurações IDE (seleção bordo, tamanho flash, etc).
 
 ### Contributing
 
-For minor fixes of code and documentation, go ahead and submit a pull request.
+Para pequenas correções de código e documentação, vá em frente e envie uma solicitação de recebimento.
 
-Larger changes (rewriting parts of existing code from scratch, adding new functions to the core, adding new libraries) should generally be discussed [in the chat](https://gitter.im/esp8266/Arduino) first.
+Mudanças maiores (reescrever partes do código existente a partir do zero, adicionando novas funções para o núcleo, adicionando novas bibliotecas) geralmente deve ser discutido [no chat](https://gitter.im/esp8266/Arduino) primeiro.
 
-Feature branches with lots of small commits (especially titled "oops", "fix typo", "forgot to add file", etc.) should be squashed before opening a pull request. At the same time, please refrain from putting multiple unrelated changes into a single pull request.
+Ramos especiais com lotes de pequenos commits (especialmente intitulado "oops", "fix erro de digitação", "esqueceu-se de adicionar o arquivo", etc.) deve ser esmagado antes de abrir uma solicitação de recebimento. Ao mesmo tempo, por favor, abster-se de colocar várias alterações independentes em uma única solicitação de recebimento.
 
 ### License and credits ###
 
-Arduino IDE is developed and maintained by the Arduino team. The IDE is licensed under GPL.
+Arduino IDE é desenvolvido e mantido pela equipe de Arduino. O IDE é licenciado sob a GPL.
 
-ESP8266 core includes an xtensa gcc toolchain, which is also under GPL.
+ESP8266 núcleo inclui um conjunto de ferramentas gcc xtensa, que também está sob a GPL.
 
-Esptool written by Christian Klippel is licensed under GPLv2, currently maintained by Ivan Grokhotkov: https://github.com/igrr/esptool-ck.
+Esptool escrito por Christian Klippel é licenciado sob a GPLv2, atualmente mantido por Ivan Grokhotkov: https://github.com/igrr/esptool-ck.
 
-Espressif SDK included in this build is under Espressif MIT License.
+Espressif SDK incluídos nesta compilação está sob Espressif MIT License.
 
-ESP8266 core files are licensed under LGPL.
+Arquivos principais ESP8266 está licenciado sob a LGPL.
 
-[SPI Flash File System (SPIFFS)](https://github.com/pellepl/spiffs) written by Peter Andersson is used in this project. It is distributed under MIT license.
+[SPI Flash File System (SPIFFS)](https://github.com/pellepl/spiffs) escrito por Peter Andersson é usado neste projeto. Ele é distribuído sob a licença MIT.
